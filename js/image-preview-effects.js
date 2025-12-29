@@ -55,11 +55,12 @@ const Effects = {
   },
 };
 
-const imagePreviewElement = document.querySelector('.img-upload__preview img');
-const effectsListElement = document.querySelector('.effects__list');
-const effectLevelElement = document.querySelector('.effect-level');
-const effectLevelSliderElement = document.querySelector('.effect-level__slider');
-const effectLevelValueElement = document.querySelector('.effect-level__value');
+const imageUploadWrapperElement = document.querySelector('.img-upload__wrapper');
+const imagePreviewElement = imageUploadWrapperElement.querySelector('.img-upload__preview img');
+const effectsListElement = imageUploadWrapperElement.querySelector('.effects__list');
+const effectLevelElement = imageUploadWrapperElement.querySelector('.effect-level');
+const effectLevelSliderElement = imageUploadWrapperElement.querySelector('.effect-level__slider');
+const effectLevelValueElement = imageUploadWrapperElement.querySelector('.effect-level__value');
 
 let currentEffect = 'none';
 

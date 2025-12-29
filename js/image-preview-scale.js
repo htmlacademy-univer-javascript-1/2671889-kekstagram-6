@@ -3,10 +3,11 @@ const SCALE_MIN = 25;
 const SCALE_MAX = 100;
 const SCALE_DEFAULT = 100;
 
-const scaleControlElement = document.querySelector('.scale__control--value');
-const scaleSmallerElement = document.querySelector('.scale__control--smaller');
-const scaleBiggerElement = document.querySelector('.scale__control--bigger');
-const imagePreviewElement = document.querySelector('.img-upload__preview img');
+const imageUploadWrapperElement = document.querySelector('.img-upload__wrapper');
+const scaleControlElement = imageUploadWrapperElement.querySelector('.scale__control--value');
+const scaleSmallerElement = imageUploadWrapperElement.querySelector('.scale__control--smaller');
+const scaleBiggerElement = imageUploadWrapperElement.querySelector('.scale__control--bigger');
+const imagePreviewElement = imageUploadWrapperElement.querySelector('.img-upload__preview img');
 
 let currentScale = SCALE_DEFAULT;
 

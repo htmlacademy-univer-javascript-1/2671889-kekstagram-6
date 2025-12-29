@@ -2,14 +2,13 @@ import { debounce, isButton, shuffleArray } from './util.js';
 import { renderPhotos, removePhotos } from './photo-render.js';
 
 const ACTIVE_BUTTON_CLASS = 'img-filters__button--active';
+const RANDOM_PHOTOS_COUNT = 10;
 
 const FilterId = {
   DEFAULT: 'filter-default',
   RANDOM: 'filter-random',
   DISCUSSED: 'filter-discussed',
 };
-
-const RANDOM_PHOTOS_COUNT = 10;
 
 const filtersContainerElement = document.querySelector('.img-filters');
 const filterButtonsElements = filtersContainerElement.querySelectorAll('.img-filters__button');
